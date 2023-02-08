@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+     
+}
+
+.navLinks a{
+    padding-left: 20px;
+}
+
+.social a{
+    padding: 5px;
+}
+
+.about-container,
+#projects{
+    padding: 20px;
+}
+
+header, #home,
+.about-container,
+.profile-image img,
+.box-container
+{
+    display: flex;  /*keep them in straight unaligned row */
+}
+
+header, .about-container,
+.box-container{
+    justify-content: space-between; /* divide the content*/
+}
+
+header{
+    align-items: center; /*keep in a real straight row */
+    
+    padding: 10px 20px;
+    color: blueviolet;
+    background: black;
+}
+
+#home{
+    background-color: rgba(128, 0, 128, 0.541);
+    height: 40vh;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    width: 40%;
+}
+
+.bio
+{
+    width: 50%;
+    align-self: center;
+}
+
+.profile-image{
+    width: 46%;
+    justify-content: center;
+}
+
+.profile-image img{
+width: 80%;
+border-radius: 50%;
+}
+
+h2{
+    text-align: center;
+}
+
+.box{
+    width: 30%;
+    box-shadow: 2px 2px 2px 2px grey;
+    padding: 10px;
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+#projects p{
+    text-align: center;
+}
+
+#contact {
+    padding: 20px;
+    color: blueviolet;
+    background: black;
+    text-align: center;
+}
+
+.social {
+    background:palevioletred;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+ 
+@media ( max-width: 600px ){
+    .about-container, .box-container{
+        flex-direction: column;
+    }
+
+    .box, .bio, 
+    .profile-image,
+    .profile-image img{
+        width: 100%;
+    }
+
+    .intro{
+        width: 90%;
+    }
+
+    .bio{
+        order: 2;
+    }
+}
